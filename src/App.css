@@ -1,38 +1,120 @@
-.App {
+/* styles.css or your CSS file */
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-card img {
+  max-width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust column width as needed */
+  gap: 20px; /* Adjust the gap between products */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/*-------------------------------------------------------------------------*/
+
+
+/* styles.css or your CSS file */
+/* Style for the container */
+.container {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Style for the product info container */
+.products-info-container {
+  display: flex;
+  align-items: center;
+  max-width: 2x1;
+  margin: 0 auto;
+}
+
+/* Style for the product image */
+.products-image {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+/* Style for the product details */
+.products-details {
+  flex: 1; /* Take remaining space */
+  padding: 1rem;
+}
+
+/* Style for the back button */
+.btn-primary a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.mb-4{
+  display: inline-flex;
+  background-color: gray;
+  justify-content: space-between;
+  width: 100%;
+}
+.space-x-2{
+  align-items: center;
+  /* background-color: aqua; */
+  display: inline-flex;
+}
+
+
+/*--------------------form---------------------*/
+/* Style for the form container */
+.form-container {
+  background-color: #f4f4f4;
+  border-radius: 50px; /* Adjust this value to control the roundness */
+  padding: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for form inputs and labels */
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for input fields */
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for buttons (Save and Cancel) */
+Button[type="submit"],
+Button[type="button"] {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+Button[type="submit"]:hover,
+Button[type="button"]:hover {
+  background-color: #0056b3;
 }
